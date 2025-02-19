@@ -1,60 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Sample Deployment</title>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Your Success!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      color: #f4f4f9;
-      background-color: #eb984e;
       font-family: 'Open Sans', sans-serif;
-      font-size: 16px;
+      background: radial-gradient(circle, #00bcd4, #3f51b5);
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .container {
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 40px 60px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(10px);
+      animation: scaleUp 0.5s ease-in-out;
     }
 
     h1 {
-      font-size: 450%;
+      font-size: 4rem;
       font-weight: 700;
-      color: #e67e22;
-      font-family: 'Lora', serif;
-      text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
-      margin-bottom: 0;
+      color: #ff4081;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+      animation: neonGlow 1.5s infinite alternate;
     }
 
     h2 {
-      font-size: 180%;
+      font-size: 2.2rem;
       font-weight: 400;
-      color: #ecf0f1;
-      font-family: 'Open Sans', sans-serif;
+      color: #eceff1;
       margin-bottom: 30px;
-      line-height: 1.5;
-      letter-spacing: 0.5px;
+      letter-spacing: 1px;
+      line-height: 1.6;
     }
 
     p {
-      font-size: 1.2rem;
-      color: #bdc3c7;
-      font-family: 'Open Sans', sans-serif;
+      font-size: 1.1rem;
+      color: #b0bec5;
+      line-height: 1.6;
+      margin-top: 20px;
     }
 
-    div {
-      text-align: center;
-      padding: 50px;
-      background-color: rgba(0, 0, 0, 0.7);
-      border-radius: 15px;
-      margin-top: 100px;
-      max-width: 80%;
-      margin-left: auto;
-      margin-right: auto;
+    @keyframes scaleUp {
+      0% {
+        transform: scale(0.9);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    @keyframes neonGlow {
+      0% {
+        text-shadow: 0 0 10px #ff4081, 0 0 20px #ff4081, 0 0 30px #ff4081;
+      }
+      100% {
+        text-shadow: 0 0 20px #ff4081, 0 0 40px #ff4081, 0 0 60px #ff4081;
+      }
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 3rem;
+      }
+
+      h2 {
+        font-size: 1.8rem;
+      }
+
+      .container {
+        padding: 30px 50px;
+      }
     }
   </style>
 </head>
 <body>
-  <div>
-    <h1>🎉 Congratulations Portia! 🎉</h1>
-    <h2>Your pipeline is working successfully
-    </h2>
-    <p>End of the page.</p>
+  <div class="container">
+    <h1>🚀 Success creation!</h1>
+    <h2>Your pipeline is ready!</h2>
+    <p>Everything is running smoothly.</p>
+    <p>Portia-F019332</p>
   </div>
 </body>
 </html>
